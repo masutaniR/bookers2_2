@@ -16,37 +16,37 @@
           <a class="navbar-brand mr-auto text-light" href="/">Bookers</a>
           <ul class="navbar-nav">
           <% if user_signed_in? %>
-            <li class="nav-item">
+            <li class="nav-link">
             <%= link_to current_user do %>
               <i class="fas fa-home text-light">Home</i>
             <% end %>
             </li>
-            <li class="nav-item">
+            <li class="nav-link">
             <%= link_to users_path do %>
               <i class="fas fa-users text-light">Users</i>
             <% end %>
             </li>
-            <li class="nav-item">
+            <li class="nav-link">
               <i class="fas fa-book-open text-light">Books</i>
             </li>
-            <li class="nav-item">
+            <li class="nav-link">
             <%= link_to destroy_user_session_path, method: :delete do %>
               <i class="fas fa-sign-out-alt text-light">logout</i>
             <% end %>
             </li>
           <% else %>
-            <li>
+            <li class="nav-link">
               <a href="/"><i class="fas fa-home text-light">Home</i></a>
             </li>
-            <li>
+            <li class="nav-link">
               <a href="home/about"><i class="fas fa-link text-light">About</i></a>
             </li>
-            <li>
+            <li class="nav-link">
             <%= link_to new_user_registration_path do %>
               <i class="fas fa-user-plus text-light">sign up</i>
             <% end %>
             </li>
-            <li>
+            <li class="nav-link">
             <%= link_to new_user_session_path do %>
               <i class="fas fa-sign-in-alt text-light">login</i>
             <% end %>

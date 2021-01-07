@@ -17,7 +17,7 @@
           <tr>
             <% @users.each do |users| %>
             <td>
-              <%= attachment_image_tag users, :profile_image_id, :fill, 40, 40, fallback: "no_image.jpg", size: "40x40" %>
+              <%= attachment_image_tag users, :profile_image, :fill, 40, 40, fallback: "no_image.jpg", size: "40x40" %>
             </td>
             <td>
               <%= users.name %>
