@@ -1,5 +1,9 @@
+<p id="notice" class="text-success">
+  <%= notice %>
+</p>
 <div class="container ml-auto mr-auto">
-
+  <div class="row">
+    <div class="col-md-10 mx-auto">
 <h1>welcome to <strong>Bookers</strong><i class="fas fa-book"></i> !!</h1>
 <p>
   In <i class="fas fa-book"></i><strong>Bookers</strong>,<br>
@@ -7,4 +11,9 @@
   about various books!
 </p>
 
+<%= link_to "Log in", new_user_session_path, class: "btn btn-sm btn-info my-2" %><br>
+<%= link_to "Sign up", new_user_registration_path, class: "btn btn-sm btn-success my-2" %>
+
+    </div>
+  </div>
 </div>
