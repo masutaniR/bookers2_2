@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <header class="bg-dark mb-2">
+    <header class="bg-dark">
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <a class="navbar-brand mr-auto text-light" href="/">Bookers</a>
@@ -59,11 +59,16 @@
       </div>
     </header>
 
-    <%= yield %>
+    <main>
+      <p id="notice" class="text-success">
+        <%= notice %>
+      </p>
+      <%= yield %>
+    </main>
 
     <footer>
-      <div class="container">
-        <p>CopyRight Infratop.inc</p>
+      <div class="container mt-5">
+        <p class="text-center">CopyRight Infratop.inc</p>
       </div>
     </footer>
 
